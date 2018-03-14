@@ -21,17 +21,17 @@ public class PlayerScore : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        ScoreUI.gameObject.GetComponent<Text>().text = "Score: " + score;
+        ScoreUI.gameObject.GetComponent<Text>().text = "Keys: " + keys;
         isAlive();
 	}
     private void OnTriggerEnter2D(Collider2D _trig)
     {
         if (_trig.gameObject.tag.Equals("Key"))
         {
-            CoinScore(_trig.gameObject);
+            KeyScore(_trig.gameObject);
         }
     }
-    public void CoinScore(GameObject _go)
+    public void KeyScore(GameObject _go)
     {
         Debug.Log("keys picked up");
         keys += 1.0f;
