@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerScore : MonoBehaviour {
@@ -12,8 +13,7 @@ public class PlayerScore : MonoBehaviour {
     public GameObject KeyUI;
 
 
-    private bool isDead = false;  
-    public DeathMenu DeathMenu;
+    private bool isDead = false;
 	// Use this for initialization
 	void Start () {
         isFound = false;
@@ -24,6 +24,13 @@ public class PlayerScore : MonoBehaviour {
         KeyUI.gameObject.GetComponent<Text>().text = "" + keys;
         isAlive();
 	}
+    private void debud()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+            {
+            OnDeath();
+            }
+    }
     private void OnTriggerEnter2D(Collider2D _trig)
     {
         if (_trig.gameObject.tag.Equals("Key"))
@@ -47,8 +54,9 @@ public class PlayerScore : MonoBehaviour {
     private void OnDeath()
     {
         isDead = true;
-        DeathMenu.ToggleDeathMenu(keys);
-
+        if (isDead == true)
+        {
+            SceneManager.LoadScene(3);
+        }
     }
-
 }
