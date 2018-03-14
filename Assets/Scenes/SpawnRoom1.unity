@@ -113,6 +113,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &272950508 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114622985444645560, guid: fec2673bb1b215341af48b26c8d6bdda,
+    type: 2}
+  m_PrefabInternal: {fileID: 921426925}
+  m_Script: {fileID: 11500000, guid: 9b0699a6d1bc0b74998c95bff8feb01c, type: 3}
 --- !u!1 &275364393
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +151,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 246.93, y: -141.5}
+  m_AnchoredPosition: {x: 207.2, y: -144}
   m_SizeDelta: {x: 63.15, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &275364395
@@ -180,7 +186,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 'Keys:'
 --- !u!222 &275364396
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -218,8 +224,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd16dea6062b5cd459a18a2a462bc914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreUI: {fileID: 0}
-  DeathMenu: {fileID: 0}
+  ScoreUI: {fileID: 275364393}
+  DeathMenu: {fileID: 272950508}
 --- !u!114 &790893918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,7 +326,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -421,6 +427,10 @@ Prefab:
     - target: {fileID: 224184120811945236, guid: fec2673bb1b215341af48b26c8d6bdda,
         type: 2}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379453048399980, guid: fec2673bb1b215341af48b26c8d6bdda, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
