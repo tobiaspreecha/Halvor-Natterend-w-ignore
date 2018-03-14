@@ -604,8 +604,8 @@ GameObject:
   - component: {fileID: 2043544473}
   - component: {fileID: 2043544472}
   m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
+  m_Name: Door
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -670,8 +670,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2043544471}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.443, y: 4.289, z: 3.0039062}
-  m_LocalScale: {x: 8.913516, y: 1.4224296, z: 1}
+  m_LocalPosition: {x: 7.344, y: -1.26, z: 3.0039062}
+  m_LocalScale: {x: 1.0852472, y: 1.9017112, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
